@@ -1,0 +1,176 @@
+*{
+margin: 0;
+padding: 0;
+border: 0;
+}
+*,*::before,*::after{
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 18px;
+   -ms-text-size-abjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family: inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+a:any-link{
+   
+   color:white;
+}
+body{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   font-family: sans-serif;
+   background-color: black;
+   color: white;
+}
+header{
+   display: flex;
+   overflow: hidden;
+   height: 40px;
+}
+header> a{
+   position: absolute;
+   padding: 15px;
+}
+header> a>.step{
+
+}
+header> #header__text{
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+}
+.wrapper{
+   display: flex;
+   flex: 1 1 auto;
+   flex-direction: column;
+   margin: 2% 0px;
+}
+.first__text{
+   position: relative;
+   width: 80%;
+   left: 50%;
+   transform: translateX(-50%);;
+}
+.groop{
+   position: relative;
+   width: 80%;
+   left: 50%;
+   transform: translateX(-50%);;
+}
+.groop__fase{
+   text-align: center;
+   padding: 10px;
+   background-color: rgba(125,181,225,0.3);
+
+   margin: 0.3em;
+   border-radius: 1em;
+   transition-property:background-color,box-shadow,color;/*обращение к конкретному css свойству*/
+   transition-duration: 400ms;/*скорость воспроизведения*/
+   transition-timing-function:ease;
+   /*задаёт сценарий анимации за x времени/*ease:медл-быстр-медл;ease-in:медл-быстр;ease-out:быстр-медл;ease-in-out:медл-медл;linear:равномерно;steps(int,start/end):шагами;cubic-bezier:собственный сценарий;*/
+   transition-delay:0s;/*задержка ДО воспроизведения*/
+}
+.groop__fase:hover{
+   cursor: pointer;
+   box-shadow: 0px 0px 25px rgb(125,181,225);
+   background-color: rgba(125,181,225,1);
+   color: black;
+
+   transition-property:background-color,box-shadow,color;/*обращение к конкретному css свойству*/
+   transition-duration: 400ms;/*скорость воспроизведения*/
+   transition-timing-function:ease;
+   /*задаёт сценарий анимации за x времени/*ease:медл-быстр-медл;ease-in:медл-быстр;ease-out:быстр-медл;ease-in-out:медл-медл;linear:равномерно;steps(int,start/end):шагами;cubic-bezier:собственный сценарий;*/
+   transition-delay:0s;/*задержка ДО воспроизведения*/
+   }
+.groop__shell{
+   display: none;
+}
+.groop > .groop__shell > .main{
+   background-color: rgba(255, 255, 255, 0.1);
+}
+.groop> .groop__shell> span{
+   display: block;
+   margin: 5px;
+}
+.groop__teg{
+   margin: 2% 5%;
+}
+.tag__fase{
+   display: flex;
+   justify-content: center;
+   padding: 1%;
+   border-radius: 1em;
+   background-color: rgba(125,181,225,0.15);
+
+   transition-property:background-color,box-shadow,color;/*обращение к конкретному css свойству*/
+   transition-duration: 400ms;/*скорость воспроизведения*/
+   transition-timing-function:ease;
+   /*задаёт сценарий анимации за x времени/*ease:медл-быстр-медл;ease-in:медл-быстр;ease-out:быстр-медл;ease-in-out:медл-медл;linear:равномерно;steps(int,start/end):шагами;cubic-bezier:собственный сценарий;*/
+   transition-delay:0s;/*задержка ДО воспроизведения*/
+}
+.tag__fase:hover{
+
+   cursor: pointer;
+   box-shadow: 0px 0px 25px rgb(125,181,225);
+   background-color: rgba(125,181,225,0.6);
+   color: black;
+
+   transition-property:background-color,box-shadow,color;/*обращение к конкретному css свойству*/
+   transition-duration: 400ms;/*скорость воспроизведения*/
+   transition-timing-function:ease;
+   /*задаёт сценарий анимации за x времени/*ease:медл-быстр-медл;ease-in:медл-быстр;ease-out:быстр-медл;ease-in-out:медл-медл;linear:равномерно;steps(int,start/end):шагами;cubic-bezier:собственный сценарий;*/
+   transition-delay:0s;/*задержка ДО воспроизведения*/
+}
+.tag__fase>.name{
+}
+.tag__fase>.cod{
+   display: none;
+}
+.tag__content{
+   margin-left: 2%;
+   display: none;
+}
+.tag__content> div{
+   margin: 0.5%;
+}
+.tag__content> .text{
+}
+.tag__content> .atribyts{
+   color: rgb(187,179,252);
+}
+.tag__content> .atribyts> .about_atribyts{
+}
+.tag__content> .tag__cod{
+   padding: 2%;
+   color: rgb(44,130,54);
+   border: 1px solid green;
+   border-radius: 0.5em;
+}
+.tag__content> .tag__rezyltat{
+   padding: 2%;
+   border: 1px solid rgb(255,90,54);
+   border-radius: 0.5em;
+}
+.tag__content> .tag__notes{
+
+}

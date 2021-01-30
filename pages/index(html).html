@@ -1,0 +1,1674 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>about Html</title>
+   <meta http-equiv="content-type" content="text/html" charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../css/style(html).css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="../js/jquery-3.5.1.min.js"></script>
+   <script src="../js/script(html).js"></script>
+</head>
+
+<!--@coment-->
+<!--<div class="groop__teg">
+   <div class="tag__fase">
+      <div class="name">@name</div>
+      <div class="cod">&lt;@teg&gt;</div>
+   </div>
+   <div class="tag__content">
+      <div class="text">@text</div>
+      <div class="atribyts">@atribyts
+         <div class="about_atribyts">@about_atribyts</div>
+      </div>
+      <div class="tag__cod" title='This is cod'>@cod</div>
+      <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+      <div class="tag__notes">@notes</div>
+   </div>
+</div>-->
+
+
+<body>
+   <header id="header">
+      <a href="../index.html">
+         <div class="step">назад</div>
+      </a>
+      <div id="header__text">html_tegs</div>
+   </header>
+   <div class="wrapper">
+      <div class="first__text">
+         Html -- это бла-бла-бла... <br>
+         он нужен для бла-бла-бла...
+      </div>
+      <!-- основы, введение. стандартная структура html документа... -->
+      <div class="groop">
+         <div class="groop__fase">
+            <div class="name">стандвртная структура html документа</div>
+         </div>
+         <div class="groop__shell" style="width:80%;position:relative;left:20px;">
+            <span>&lt;!DOCTYPE&gt; -- показывает браузеру тип документа, сообщает его версию и язык</span>
+            <span>&lt;html&gt;</span>
+            <span style="position:relative;left: 30px;">&lt;head&gt;</span>
+            <span style="position:relative;left: 40px;"> -- здесь теги, которые
+               <span>невидимы.</span>пользователю.</span>
+            <span style="position:relative;left: 30px;">&lt;/head&gt;</span>
+            <span style="position:relative;left: 30px;">&lt;body&gt;</span>
+            <span style="position:relative;left: 40px;"> -- здесь теги, которые и отображают пользователю основную
+               информацию, то есть <span>видимая</span>. </span>
+            <span style="position:relative;left: 40px;">&lt;!--comment--&gt; -- таким образом записывают коментарии,они
+               не отображаются на странице.</span>
+            <span style="position:relative;left: 30px;">&lt;/body&gt;</span>
+            <span>&lt;/html&gt;</span>
+         </div>
+      </div>
+      <!-- форматирование текста -->
+      <div class="groop">
+         <!--имя группы-->
+         <div class="groop__fase">
+            <div class="name">форматирование</div>
+         </div>
+         <!-- тело группы -->
+         <div class="groop__shell">
+            <!-- аббревиатура -->
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">аббревиатура или акроним</div>
+                  <div class="cod">&lt;abbr&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">
+                     Даёт понять, что символы внутри данного тега являются аббревиатурой. <br>
+                     Парный. <br>
+                  </div>
+                  <div class="atribyts">
+                     Для этого тега доступны <a href="#">универсальные атрибуты</a> <br>
+                     Этому тегу рекоментуестя использовать атрибут <span>title</span> <br>
+                     <div class="about_atribyts">значением которого будет расшифровка аббревиатуры</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>
+                     &lt;abbr title="HyperText Markup Language"&gt;Html&lt;/abbr&gt;
+                  </div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>
+                     <abbr title="HyperText Markup Language">Html</abbr>
+                  </div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <!-- об авторе -->
+            <div class="groop__teg">
+               <div class="tag__fase ">
+                  <div class="name">контактная информацию владельца статьи</div>
+                  <div class="cod">&lt;adress&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">
+                     предназначен для хранения информации об авторе
+                     и может включать в себя любые элементы HTML вроде ссылок, текста,
+                     выделений и т.д. <br>
+                     Парный <br>
+                  </div>
+                  <div class="atribyts">
+                     Для этого тега доступны <a href="#">универсальные атрибуты</a> <br>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>
+                     &lt;adress&gt;Чел Человек Человекович&lt;/adress&gt;
+                  </div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>
+                     <address>Чел Человек Человекович</address>
+                  </div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <!-- жирный текст -->
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">жирный текст</div>
+                  <div class="cod">&lt;b&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">
+                     Этот тег видоизменяет простой текст в жирный <br>
+                     Парный <br>
+                  </div>
+                  <div class="atribyts">
+                     Для этого тега доступны <a href="#">универсальные атрибуты</a> <br>
+                     Не имеет собственных атрибутов
+                  </div>
+                  <div class="tag__cod" title='This is cod'>
+                     &lt;p&gt;Текст не выделенный жирным&lt;/p&gt; &lt;br&gt;<br>
+                     &lt;b&gt;Текст выделенный жирным&lt;/b&gt;
+                  </div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>
+                     <p>Текст не выделенный жирным</p>
+                     <b>Текст выделенный жирным</b>
+                  </div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <!-- большой текст -->
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">большой текст</div>
+                  <div class="cod">&lt;big&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">
+                     Делает текст больше, относительно окружающего <br>
+                     Парный <br>
+                  </div>
+                  <div class="atribyts">
+                     Для этого тега доступны <a href="#">универсальные атрибуты</a> <br>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>
+                     &lt;p&gt; просто текст&lt;/p&lt; &lt;br&gt; <br>
+                     &lt;big&gt; большой текст&lt;/big&gt;
+                  </div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>
+                     <p> просто текст</p> <br>
+                     <big> большой текст</big>
+                  </div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <!-- маленький текст -->
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">маленький текст</div>
+                  <div class="cod">&lt;small&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">
+                     Делает текст больше, относительно окружающего <br>
+                     Парный <br>
+                  </div>
+                  <div class="atribyts">
+                     Для этого тега доступны <a href="#">универсальные атрибуты</a> <br>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>
+                     &lt;p&gt; просто текст&lt;/p&lt; &lt;br&gt; <br>
+                     &lt;small&gt; маленький текст&lt;/small&gt;
+                  </div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>
+                     <p> просто текст</p> <br>
+                     <small> маленький текст</small>
+                  </div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <!-- большая цитата -->
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">длиная цитата</div>
+                  <div class="cod">&lt;blockquote&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">
+                     Предназначен для выделения длинных цитат внутри документа. <br> Текст, обозначенный этим тегом,
+                     традиционно отображается как
+                     выровненный блок с отступами слева и справа (примерно по 40 пикселов), а также с отбивкой сверху и
+                     снизу. <br>
+                     Парный. <br>
+                  </div>
+                  <div class="atribyts">
+                     Для этого тега доступны <a href="#">универсальные атрибуты</a> <br>
+                     не имеет собственых атрибутов.
+                  </div>
+                  <div class="tag__cod" title='This is cod'>
+                     &lt;blockquote&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio facere repellat
+                     quas, mollitia doloremque quasi officia. Provident veniam officiis excepturi possimus illum
+                     voluptate, quidem magnam autem animi numquam. Libero, omnis.&lt;/blockquote&gt;
+                  </div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">
+                     <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium animi nesciunt
+                        ducimus suscipit qui excepturi accusamus esse beatae officia molestias? Praesentium harum quis
+                        unde doloremque fugiat? Id nihil unde fugiat.</blockquote>
+                  </div>
+               </div>
+            </div>
+            <!-- источник цитаты -->
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name"> источник цитаты </div>
+                  <div class="cod">&lt;cite&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">
+                     помечает текст как цитату или сноску на другой материал <br>
+                     Парный <br>
+                  </div>
+                  <div class="atribyts">
+                     не имеет собственных атрибутов
+                     Для этого тега доступны <a href="#">универсальные атрибуты</a> <br>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>
+                     &lt;p&gt;я -- красивый текст&lt;/p&gt;
+                     &lt;cite&gt; а я источник красивого текста&lt;/cite&gt;
+                  </div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>
+                     <p>я -- красивый текст</p>
+                     <cite> а я источник красивого текста</cite>
+                  </div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <!-- компьютерный код -->
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">фрагмент компьютерного кода</div>
+                  <div class="cod">&lt;code&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">
+                     используется для обозначения фрагментов кода. <br>
+                     Парный <br>
+                  </div>
+                  <div class="atribyts">
+                     не имеет собственных атрибутов
+                     Для этого тега доступны <a href="#">универсальные атрибуты</a> <br>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>
+                     &lt;code&gt;program&lt;/code&gt;
+                  </div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>
+                     <code>program</code>
+                  </div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <!-- курсивный текст -->
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">курсивный текст</div>
+                  <div class="cod">&lt;i&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">
+                     выделяет текст курсивным шрифтом <br>
+                     Парный <br>
+                  </div>
+                  <div class="atribyts">
+                     не имеет собственных атрибутов
+                     для этого тега доступны <a href="#">универсальные атрибуты</a> <br>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>
+                     &lt;p&gt;просто текст&lt;/p&gt;
+                     &lt;i&gt;курсивный текст&lt;/i&gt;
+                  </div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>
+                     <p>просто текст</p>
+                     <i>курсивный текст</i>
+                  </div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <!-- отмеченный текст -->
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">отмеченный / выделенный текст</div>
+                  <div class="cod">&lt;mark&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">
+                     Такой текст ничем не отличается от обычного, но его вид может быть изменен с помощью стилей <br>
+                     Парный <br>
+                  </div>
+                  <div class="atribyts">
+                     не имеет собственных атрибутов
+                     для этого тега доступны <a href="#">универсальные атрибуты</a> <br>
+                  </div><div class="tag__cod" title='This is cod'>
+                     &lt;p&gt;просто текст&lt;/p&gt;
+                     &lt;mark&gt;маркированый текст&lt;/mark&gt;
+                  </div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>
+                     <p>просто текст</p>
+                     <mark>маркированый текст</mark>
+                  </div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <!-- предварительно отформатированный текст -->
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">предварительно отформатированный текст</div>
+                  <div class="cod">&lt;pre&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">
+                     Такой текст отображается обычно моноширинным шрифтом и со всеми пробелами между словами
+                  </div>
+                  <div class="atribyts">
+                     не имеет собственных атрибутов
+                     для этого тега доступны <a href="#">универсальные атрибуты</a> <br>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>
+                     <pre>
+                     &lt;pre&gt;
+                     	 -                -----
+                     	 -----           |-----
+                     	||----|          ----||
+                     	||-----         -----||
+                     	||-----|       |-----||
+                     	|| -----       ------||
+                     	||- ----|     |------||
+                     	||---||--     -------||
+                     	||--|| --|   |-------||
+                     	|| -|| |--   --- - --||
+                     	|| -||  --|-|--| - ---|
+                     	|---||  |-----| |-----|
+                     	|---||   |----  |-----|
+                     	|----|    ---   |-----|
+                     	|-----          ------|
+                      &lt;/pre&gt;
+
+                     </pre>
+                  </div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>
+                     <pre>
+                     	 -                -----  
+                     	 -----           |-----
+                     	||----|          ----||  
+                     	||-----         -----||  
+                     	||-----|       |-----||
+                     	|| -----       ------||
+                     	||- ----|     |------||
+                     	||---||--     -------||
+                     	||--|| --|   |-------||
+                     	|| -|| |--   --- - --||
+                     	|| -||  --|-|--| - ---|
+                     	|---||  |-----| |-----|
+                     	|---||   |----  |-----| 
+                     	|----|    ---   |-----|
+                     	|-----          ------| 
+                      </pre>
+                  </div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <!--короткая цитата-->
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">короткая цитата</div>
+                  <div class="cod">&lt;q&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">
+                     используется для обозначения короткой цитаты
+                  </div>
+                  <div class="atribyts">
+                     не имеет собственных атрибутов
+                     для этого тега доступны <a href="#">универсальные атрибуты</a> <br>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>
+                     &lt;p&gt; я -- текст &lt;/p&gt;
+                     &lt;q&gt; я -- цитата&lt;/q&gt;
+                  </div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>
+                     <p> я -- текст </p>
+                     <q> я -- цитата</q></div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <!-- неправильный текст -->
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">текст, который больше не является правильным</div>
+                  <div class="cod">&lt;s&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">
+                     используется для обозначения неправильного текста и в некоторых браузерах выводится перечеркнутым <br>
+                     Парный <br>
+                  </div>
+                  <div class="atribyts">
+                     не имеет собственных атрибутов
+                     для этого тега доступны <a href="#">универсальные атрибуты</a> <br>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>
+                     &lt;p&gt; я -- правильный текст&lt;/p&gt;
+                     &lt;s&gt; я -- неправильный текст&lt;/s&gt;
+                  </div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>
+                     <p> я -- правильный текст</p>
+                     <s> я -- неправильный текст</s>
+                  </div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <!-- пример компьютерной программы -->
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">образец вывода компьютерной программы</div>
+                  <div class="cod">&lt;samp&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">
+                     даёт понять браузеру, что в этом теге компьютерная программа <br>
+                     Парный <br>
+                  </div>
+                  <div class="atribyts">
+                     не имеет собственных атрибутов <br>
+                     для этого тега доступны <a href="#">универсальные атрибуты</a> <br>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>
+                     &lt;p&lt; я -- просто текст &lt;/p&lt;
+                     &lt;samp&gt;я -- компьютерная программа&lt;/samp&gt;
+                  </div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>
+                     <p> я -- просто текст </p>
+                     <samp> я -- компьютерная программа </samp>
+                  </div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <!-- подстрочный текст -->
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">построчный текст</div>
+                  <div class="cod">&lt;sub&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <!-- надстрочны текст -->
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">надстрочный текст</div>
+                  <div class="cod">&lt;sup&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <!-- выделенный текст -->
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">выделенный текст</div>
+                  <div class="cod">&lt;u&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- изобраение -->
+      <div class="groop">
+         <div class="groop__fase">
+            <div class="name">Изображение</div>
+         </div>
+         <div class="groop__shell ">
+            <div class="groop__teg main">
+               <div class="tag__fase">
+                  <div class="name">вставка изображения</div>
+                  <div class="cod">&lt;img&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">карта изображения на стороне клиента</div>
+                  <div class="cod">&lt;map&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">область внутри карты изображения</div>
+                  <div class="cod">&lt;area&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">Используется для рисования графики на лету с помощью сценариев JavaScript</div>
+                  <div class="cod">&lt;canvas&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">заголовок для элемента &lt;figure&gt;</div>
+                  <div class="cod">&lt;figcaption&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">автономное содержимое</div>
+                  <div class="cod">&lt;figure&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">контейнер для нескольких ресурсов изображения</div>
+                  <div class="cod">&lt;picture&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">контейнер для графики SVG</div>
+                  <div class="cod">&lt;svg&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- ссылки -->
+      <div class="groop">
+         <div class="groop__fase">
+            <div class="name">Ссылки</div>
+         </div>
+         <div class="groop__shell">
+            <div class="groop__teg main">
+               <div class="tag__fase">
+                  <div class="name">гиперссылка</div>
+                  <div class="cod">&lt;a&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg main">
+               <div class="tag__fase">
+                  <div class="name">связь между документом и внешним ресурсом (чаще всего используется для ссылки на
+                     таблицы стилей)</div>
+                  <div class="cod">&lt;link&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase main">
+                  <div class="name">навигационные ссылки</div>
+                  <div class="cod">&lt;nav&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- списки -->
+      <div class="groop">
+         <div class="groop__fase">
+            <div class="name">Списки</div>
+         </div>
+         <div class="groop__shell">
+            <div class="groop__teg main">
+               <div class="tag__fase">
+                  <div class="name">неупорядоченный список</div>
+                  <div class="cod">&lt;ul&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg main">
+               <div class="tag__fase">
+                  <div class="name">упорядоченный список</div>
+                  <div class="cod">&lt;ol&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg main">
+               <div class="tag__fase">
+                  <div class="name">элемент списка</div>
+                  <div class="cod">&lt;li&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">Определяет список каталогов</div>
+                  <div class="cod">&lt;dir&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">список описаний</div>
+                  <div class="cod">&lt;dl&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">термин / имя в списке описаний</div>
+                  <div class="cod">&lt;dt&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">описание термина / имени в списке описаний</div>
+                  <div class="cod">&lt;dd&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--стили и семантика-->
+      <div class="groop">
+         <div class="groop__fase">
+            <div class="name">Стили и семантика</div>
+         </div>
+         <div class="groop__shell">
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">информация о стиле для документа</div>
+                  <div class="cod">&lt;style&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg main">
+               <div class="tag__fase">
+                  <div class="name">раздел в документе</div>
+                  <div class="cod">&lt;div&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg main">
+               <div class="tag__fase">
+                  <div class="name">раздел в документе</div>
+                  <div class="cod">&lt;span&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg main">
+               <div class="tag__fase">
+                  <div class="name">заголовок для документа или раздела</div>
+                  <div class="cod">&lt;header&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg main">
+               <div class="tag__fase">
+                  <div class="name">нижний колонтитул для документа или раздела</div>
+                  <div class="cod">&lt;footer&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg main">
+               <div class="tag__fase">
+                  <div class="name">основное содержимое документа</div>
+                  <div class="cod">&lt;main&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">раздел в документе</div>
+                  <div class="cod">&lt;section&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">статья</div>
+                  <div class="cod">&lt;article&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">содержимое помимо содержимого страницы</div>
+                  <div class="cod">&lt;aside&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">дополнительные сведения, которые пользователь может просматривать или скрывать
+                  </div>
+                  <div class="cod">&lt;details&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">диалоговое окно или окно</div>
+                  <div class="cod">&lt;dialog&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">видимый заголовок для элемента &lt;detailsy&gt; </div>
+                  <div class="cod">&lt;summary&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">машиночитаемый перевод заданного содержания.</div>
+                  <div class="cod">&lt;data&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--формы и ввод-->
+      <div class="groop">
+         <div class="groop__fase">
+            <div class="name">Формы и ввод</div>
+         </div>
+         <div class="groop__shell">
+            <div class="groop__teg main">
+               <div class="tag__fase ">
+                  <div class="name">оболочка HTML-форм для ввода пользователем</div>
+                  <div class="cod">&lt;form&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text
+                  </div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">
+                     </div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg main">
+               <div class="tag__fase">
+                  <div class="name">элемент управления вводом</div>
+                  <div class="cod">&lt;input&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg main">
+               <div class="tag__fase">
+                  <div class="name">многострочный элемент управления вводом (текстовая область)</div>
+                  <div class="cod">&lt;textarea&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg main">
+               <div class="tag__fase">
+                  <div class="name">интерактивная кнопка</div>
+                  <div class="cod">&lt;button&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg main">
+               <div class="tag__fase">
+                  <div class="name">раскрывающийся список</div>
+                  <div class="cod">&lt;select&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">группа связанных параметров в раскрывающемся списке</div>
+                  <div class="cod">&lt;optgroup&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg main">
+               <div class="tag__fase">
+                  <div class="name">параметр в раскрывающемся списке</div>
+                  <div class="cod">&lt;option&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg main">
+               <div class="tag__fase">
+                  <div class="name">метку для элемента &lt;input&gt;</div>
+                  <div class="cod">&lt;label&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">Группировка связанные элементы в форме</div>
+                  <div class="cod">&lt;fieldset&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">заголовок для элемента &lt;fieldset&gt;</div>
+                  <div class="cod">&lt;legend&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">список предопределенных параметров для элементов управления вводом</div>
+                  <div class="cod">&lt;datalist&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg main">
+               <div class="tag__fase">
+                  <div class="name">Определяет результат вычисления</div>
+                  <div class="cod">&lt;output&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- таблицы -->
+      <div class="groop">
+         <div class="groop__fase">
+            <div class="name">Таблицы</div>
+         </div>
+         <div class="groop__shell">
+            <div class="groop__teg main">
+               <div class="tag__fase">
+                  <div class="name">создаёт таблицу</div>
+                  <div class="cod">&lt;table&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg main">
+               <div class="tag__fase">
+                  <div class="name">заголовок таблицы</div>
+                  <div class="cod">&lt;caption&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">ячейка заголовка в таблице</div>
+                  <div class="cod">&lt;th&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">строка в таблице</div>
+                  <div class="cod">&lt;tr&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">ячейка в таблице</div>
+                  <div class="cod">&lt;td&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">содержимое заголовка в таблице</div>
+                  <div class="cod">&lt;thead&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">содержимое тела в таблицу</div>
+                  <div class="cod">&lt;tbody&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">содержимое нижнего колонтитула в таблице</div>
+                  <div class="cod">&lt;tfoot&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">свойства столбца для каждого столбца в элементе &lt;colgroup&gt;</div>
+                  <div class="cod">&lt;col&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">группа из одного или нескольких столбцов в таблице для форматирования</div>
+                  <div class="cod">&lt;colgroup&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- аудио и видео -->
+      <div class="groop">
+         <div class="groop__fase">
+            <div class="name">Аудио видео</div>
+         </div>
+         <div class="groop__shell">
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">звуковой контент</div>
+                  <div class="cod">&lt;audio&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">видео или фильм</div>
+                  <div class="cod">&lt;video&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">несколько медиаресурсов для медиаэлементов (&lt;video&gt;, &lt;audio&gt; и
+                     &lt;picture&gt;)</div>
+                  <div class="cod">&lt;source&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">текстовые дорожки для медиа-элементов (&lt;video&gt; и &lt;audio&gt;)</div>
+                  <div class="cod">&lt;track&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- кадры и фреймы -->
+      <div class="groop">
+         <div class="groop__fase">
+            <div class="name">Кадры(Фрейм)</div>
+         </div>
+         <div class="groop__shell">
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">Определяет встроенный фрейм</div>
+                  <div class="cod">&lt;iframe&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">окно (фрейм) в наборе фреймов</div>
+                  <div class="cod">&lt;frame&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">набор рамок</div>
+                  <div class="cod">&lt;frameset&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">альтернативный контент для пользователей, которые не поддерживают фреймы</div>
+                  <div class="cod">&lt;noframes&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- мета-даные -->
+      <div class="groop">
+         <div class="groop__fase">
+            <div class="name">Мета Информация</div>
+         </div>
+         <div class="groop__shell">
+            <div class="groop__teg main">
+               <div class="tag__fase">
+                  <div class="name">информацию о документе</div>
+                  <div class="cod">&lt;head&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg main">
+               <div class="tag__fase">
+                  <div class="name">метаданные о HTML-документе</div>
+                  <div class="cod">&lt;meta&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">базовый URL-адрес / цель для всех относительных URL-адресов в документе.</div>
+                  <div class="cod">&lt;base&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">Вместо этого используйте CSS.Задает цвет, размер и шрифт по умолчанию для всего
+                     текста в документе</div>
+                  <div class="cod">&lt;basefont&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- программирование -->
+      <div class="groop">
+         <div class="groop__fase">
+            <div class="name">Программирование</div>
+         </div>
+         <div class="groop__shell">
+            <div class="groop__teg main">
+               <div class="tag__fase">
+                  <div class="name">клиентский сценарий</div>
+                  <div class="cod">&lt;script&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">альтернативный контент для пользователей, которые не поддерживают клиентские
+                     скрипты</div>
+                  <div class="cod">&lt;noscript&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">Вместо этого используйте &lt;embed&gt; или &lt;object&gt;.Определяет встроенный
+                     апплет </div>
+                  <div class="cod">&lt;applet&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">контейнер для внешнего (не HTML) приложения</div>
+                  <div class="cod">&lt;embed&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">внедренный объект</div>
+                  <div class="cod">&lt;object&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+            <div class="groop__teg">
+               <div class="tag__fase">
+                  <div class="name">параметр для объекта</div>
+                  <div class="cod">&lt;param&gt;</div>
+               </div>
+               <div class="tag__content">
+                  <div class="text">@text</div>
+                  <div class="atribyts">@atribyts
+                     <div class="about_atribyts">@about_atribyts</div>
+                  </div>
+                  <div class="tag__cod" title='This is cod'>@cod</div>
+                  <div class="tag__rezyltat" title='This is rrrrrrrrr'>@rezyltat</div>
+                  <div class="tag__notes">@notes</div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <footer>
+      <div class="massange">pages for html tags</div>
+   </footer>
+</body>
+
+</html>
